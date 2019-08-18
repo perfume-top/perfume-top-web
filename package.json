@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "rm -f ./dist/web.tar && cd dist && tar -cvf web.tar ./*"
   },
   "private": true,
   "dependencies": {

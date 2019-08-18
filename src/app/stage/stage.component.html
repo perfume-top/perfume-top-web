@@ -1,0 +1,22 @@
+<!-- <div>stage head
+
+</div>
+<div style="min-height: 20em" [@routeAnimations]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+</div>
+<div>stage bottom</div> -->
+
+
+<div class="layout-wrapper" [class.darkmode]="darkmode">
+    <style>.app-loading{opacity: 0.2;}</style>
+    <app-topbar></app-topbar>
+
+    <div class="layout-main" [@routeAnimations]="prepareRoute(outlet)">
+        <router-outlet #outlet="outlet"></router-outlet>
+    </div>
+
+    <app-footer></app-footer>
+
+    <div class="layout-mask"></div>
+
+</div>
